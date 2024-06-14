@@ -1,0 +1,62 @@
+
+SUMMARISING RUN PARAMETERS
+==========================
+Input filename: /work/xulab/xulab-seq/sfr/scripts/ChIP-Rx-pipeline/test/00_rawdata/IP_input_DMSO_rep2_R1.fastq.gz
+Trimming mode: paired-end
+Trim Galore version: 0.6.7
+Cutadapt version: 4.2
+Number of cores used for trimming: 1
+Quality Phred score cutoff: 25
+Quality encoding type selected: ASCII+33
+Adapter sequence: 'CTGTCTCTTATACAC' (user defined)
+Maximum trimming error rate: 0.1 (default)
+Optional adapter 2 sequence (only used for read 2 of paired-end files): 'CTGTCTCTTATACAC'
+Minimum required adapter overlap (stringency): 4 bp
+Minimum required sequence length for both reads before a sequence pair gets removed: 36 bp
+All Read 1 sequences will be trimmed by 34 bp from their 5' end to avoid poor qualities or biases
+All Read 2 sequences will be trimmed by 10 bp from their 5' end to avoid poor qualities or biases (e.g. M-bias for BS-Seq applications)
+Output file will be GZIP compressed
+
+
+This is cutadapt 4.2 with Python 3.10.8
+Command line parameters: -j 1 -e 0.1 -q 25 -O 4 -a CTGTCTCTTATACAC /work/xulab/xulab-seq/sfr/scripts/ChIP-Rx-pipeline/test/00_rawdata/IP_input_DMSO_rep2_R1.fastq.gz
+Processing single-end reads on 1 core ...
+Finished in 0.410 s (41.109 µs/read; 1.46 M reads/minute).
+
+=== Summary ===
+
+Total reads processed:                   9,970
+Reads with adapters:                        53 (0.5%)
+Reads written (passing filters):         9,970 (100.0%)
+
+Total basepairs processed:     1,409,363 bp
+Quality-trimmed:                       0 bp (0.0%)
+Total written (filtered):      1,409,115 bp (100.0%)
+
+=== Adapter 1 ===
+
+Sequence: CTGTCTCTTATACAC; Type: regular 3'; Length: 15; Trimmed: 53 times
+
+Minimum overlap: 4
+No. of allowed errors:
+1-9 bp: 0; 10-15 bp: 1
+
+Bases preceding removed adapters:
+  A: 9.4%
+  C: 32.1%
+  G: 30.2%
+  T: 28.3%
+  none/other: 0.0%
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+4	37	38.9	0	37
+5	8	9.7	0	8
+6	4	2.4	0	4
+8	2	0.2	0	2
+10	2	0.0	1	0 2
+
+RUN STATISTICS FOR INPUT FILE: /work/xulab/xulab-seq/sfr/scripts/ChIP-Rx-pipeline/test/00_rawdata/IP_input_DMSO_rep2_R1.fastq.gz
+=============================================
+9970 sequences processed in total
+

@@ -1,0 +1,9 @@
+Module	Section	Sample Name	Source
+FastQC	all_sections	IP_H3K27ac_DMSO_rep2_trimmed_R1	/work/xulab/xulab-seq/sfr/scripts/ChIP-Rx-pipeline/test/02_trimmeddata_fastqc/IP_H3K27ac_DMSO_rep2_trimmed_R1_fastqc.zip
+FastQC	all_sections	IP_input_DMSO_rep2_trimmed_R1	/work/xulab/xulab-seq/sfr/scripts/ChIP-Rx-pipeline/test/02_trimmeddata_fastqc/IP_input_DMSO_rep2_trimmed_R1_fastqc.zip
+FastQC	all_sections	IP_H3K27ac_DMSO_rep2_trimmed_R2	/work/xulab/xulab-seq/sfr/scripts/ChIP-Rx-pipeline/test/02_trimmeddata_fastqc/IP_H3K27ac_DMSO_rep2_trimmed_R2_fastqc.zip
+FastQC	all_sections	IP_input_DMSO_rep2_trimmed_R2	/work/xulab/xulab-seq/sfr/scripts/ChIP-Rx-pipeline/test/02_trimmeddata_fastqc/IP_input_DMSO_rep2_trimmed_R2_fastqc.zip
+FastQC	all_sections	IP_H3K27ac_DMSO_rep1_trimmed_R1	/work/xulab/xulab-seq/sfr/scripts/ChIP-Rx-pipeline/test/02_trimmeddata_fastqc/IP_H3K27ac_DMSO_rep1_trimmed_R1_fastqc.zip
+FastQC	all_sections	IP_H3K27ac_DMSO_rep1_trimmed_R2	/work/xulab/xulab-seq/sfr/scripts/ChIP-Rx-pipeline/test/02_trimmeddata_fastqc/IP_H3K27ac_DMSO_rep1_trimmed_R2_fastqc.zip
+FastQC	all_sections	IP_input_DMSO_rep1_trimmed_R2	/work/xulab/xulab-seq/sfr/scripts/ChIP-Rx-pipeline/test/02_trimmeddata_fastqc/IP_input_DMSO_rep1_trimmed_R2_fastqc.zip
+FastQC	all_sections	IP_input_DMSO_rep1_trimmed_R1	/work/xulab/xulab-seq/sfr/scripts/ChIP-Rx-pipeline/test/02_trimmeddata_fastqc/IP_input_DMSO_rep1_trimmed_R1_fastqc.zip

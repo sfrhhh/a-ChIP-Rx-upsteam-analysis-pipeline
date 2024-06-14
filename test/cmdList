@@ -1,0 +1,2 @@
+../pipeline/01_process-before-map.sh `pwd` > 01_process-before-map.log 2>&1
+../pipeline/01.1_CHIPseq.sh `pwd` > 01.1_CHIPseq.log 2>&1

@@ -1,0 +1,161 @@
+Multicore support not enabled. Proceeding with single-core trimming.
+Path to Cutadapt set as: 'cutadapt' (default)
+Cutadapt seems to be working fine (tested command 'cutadapt --version')
+Cutadapt version: 4.2
+single-core operation.
+Output will be written into the directory: /work/xulab/xulab-seq/sfr/scripts/ChIP-Rx-pipeline/test/02_trimmeddata/
+Writing report to '/work/xulab/xulab-seq/sfr/scripts/ChIP-Rx-pipeline/test/02_trimmeddata/IP_input_DMSO_rep1_R1.fastq.gz_trimming_report.txt'
+
+SUMMARISING RUN PARAMETERS
+==========================
+Input filename: /work/xulab/xulab-seq/sfr/scripts/ChIP-Rx-pipeline/test/00_rawdata/IP_input_DMSO_rep1_R1.fastq.gz
+Trimming mode: paired-end
+Trim Galore version: 0.6.7
+Cutadapt version: 4.2
+Number of cores used for trimming: 1
+Quality Phred score cutoff: 25
+Quality encoding type selected: ASCII+33
+Adapter sequence: 'CTGTCTCTTATACAC' (user defined)
+Maximum trimming error rate: 0.1 (default)
+Optional adapter 2 sequence (only used for read 2 of paired-end files): 'CTGTCTCTTATACAC'
+Minimum required adapter overlap (stringency): 4 bp
+Minimum required sequence length for both reads before a sequence pair gets removed: 36 bp
+All Read 1 sequences will be trimmed by 34 bp from their 5' end to avoid poor qualities or biases
+All Read 2 sequences will be trimmed by 10 bp from their 5' end to avoid poor qualities or biases (e.g. M-bias for BS-Seq applications)
+Output file(s) will be GZIP compressed
+
+Cutadapt seems to be fairly up-to-date (version 4.2). Setting -j 1
+Writing final adapter and quality trimmed output to IP_input_DMSO_rep1_R1_trimmed.fq.gz
+
+
+  >>> Now performing quality (cutoff '-q 25') and adapter trimming in a single pass for the adapter sequence: 'CTGTCTCTTATACAC' from file /work/xulab/xulab-seq/sfr/scripts/ChIP-Rx-pipeline/test/00_rawdata/IP_input_DMSO_rep1_R1.fastq.gz <<< 
+This is cutadapt 4.2 with Python 3.10.8
+Command line parameters: -j 1 -e 0.1 -q 25 -O 4 -a CTGTCTCTTATACAC /work/xulab/xulab-seq/sfr/scripts/ChIP-Rx-pipeline/test/00_rawdata/IP_input_DMSO_rep1_R1.fastq.gz
+Processing single-end reads on 1 core ...
+Finished in 0.410 s (40.991 µs/read; 1.46 M reads/minute).
+
+=== Summary ===
+
+Total reads processed:                  10,000
+Reads with adapters:                        68 (0.7%)
+Reads written (passing filters):        10,000 (100.0%)
+
+Total basepairs processed:     1,411,094 bp
+Quality-trimmed:                       0 bp (0.0%)
+Total written (filtered):      1,410,767 bp (100.0%)
+
+=== Adapter 1 ===
+
+Sequence: CTGTCTCTTATACAC; Type: regular 3'; Length: 15; Trimmed: 68 times
+
+Minimum overlap: 4
+No. of allowed errors:
+1-9 bp: 0; 10-15 bp: 1
+
+Bases preceding removed adapters:
+  A: 20.6%
+  C: 27.9%
+  G: 16.2%
+  T: 35.3%
+  none/other: 0.0%
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+4	46	39.1	0	46
+5	12	9.8	0	12
+6	3	2.4	0	3
+7	1	0.6	0	1
+8	1	0.2	0	1
+10	5	0.0	1	0 5
+
+RUN STATISTICS FOR INPUT FILE: /work/xulab/xulab-seq/sfr/scripts/ChIP-Rx-pipeline/test/00_rawdata/IP_input_DMSO_rep1_R1.fastq.gz
+=============================================
+10000 sequences processed in total
+The length threshold of paired-end sequences gets evaluated later on (in the validation step)
+
+Writing report to '/work/xulab/xulab-seq/sfr/scripts/ChIP-Rx-pipeline/test/02_trimmeddata/IP_input_DMSO_rep1_R2.fastq.gz_trimming_report.txt'
+
+SUMMARISING RUN PARAMETERS
+==========================
+Input filename: /work/xulab/xulab-seq/sfr/scripts/ChIP-Rx-pipeline/test/00_rawdata/IP_input_DMSO_rep1_R2.fastq.gz
+Trimming mode: paired-end
+Trim Galore version: 0.6.7
+Cutadapt version: 4.2
+Number of cores used for trimming: 1
+Quality Phred score cutoff: 25
+Quality encoding type selected: ASCII+33
+Adapter sequence: 'CTGTCTCTTATACAC' (user defined)
+Maximum trimming error rate: 0.1 (default)
+Optional adapter 2 sequence (only used for read 2 of paired-end files): 'CTGTCTCTTATACAC'
+Minimum required adapter overlap (stringency): 4 bp
+Minimum required sequence length for both reads before a sequence pair gets removed: 36 bp
+All Read 1 sequences will be trimmed by 34 bp from their 5' end to avoid poor qualities or biases
+All Read 2 sequences will be trimmed by 10 bp from their 5' end to avoid poor qualities or biases (e.g. M-bias for BS-Seq applications)
+Output file(s) will be GZIP compressed
+
+Cutadapt seems to be fairly up-to-date (version 4.2). Setting -j -j 1
+Writing final adapter and quality trimmed output to IP_input_DMSO_rep1_R2_trimmed.fq.gz
+
+
+  >>> Now performing quality (cutoff '-q 25') and adapter trimming in a single pass for the adapter sequence: 'CTGTCTCTTATACAC' from file /work/xulab/xulab-seq/sfr/scripts/ChIP-Rx-pipeline/test/00_rawdata/IP_input_DMSO_rep1_R2.fastq.gz <<< 
+This is cutadapt 4.2 with Python 3.10.8
+Command line parameters: -j 1 -e 0.1 -q 25 -O 4 -a CTGTCTCTTATACAC /work/xulab/xulab-seq/sfr/scripts/ChIP-Rx-pipeline/test/00_rawdata/IP_input_DMSO_rep1_R2.fastq.gz
+Processing single-end reads on 1 core ...
+Finished in 0.410 s (40.972 µs/read; 1.46 M reads/minute).
+
+=== Summary ===
+
+Total reads processed:                  10,000
+Reads with adapters:                        74 (0.7%)
+Reads written (passing filters):        10,000 (100.0%)
+
+Total basepairs processed:     1,406,438 bp
+Quality-trimmed:                       0 bp (0.0%)
+Total written (filtered):      1,406,084 bp (100.0%)
+
+=== Adapter 1 ===
+
+Sequence: CTGTCTCTTATACAC; Type: regular 3'; Length: 15; Trimmed: 74 times
+
+Minimum overlap: 4
+No. of allowed errors:
+1-9 bp: 0; 10-15 bp: 1
+
+Bases preceding removed adapters:
+  A: 16.2%
+  C: 28.4%
+  G: 24.3%
+  T: 31.1%
+  none/other: 0.0%
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+4	51	39.1	0	51
+5	8	9.8	0	8
+6	7	2.4	0	7
+7	4	0.6	0	4
+8	1	0.2	0	1
+10	2	0.0	1	0 2
+12	1	0.0	1	0 1
+
+RUN STATISTICS FOR INPUT FILE: /work/xulab/xulab-seq/sfr/scripts/ChIP-Rx-pipeline/test/00_rawdata/IP_input_DMSO_rep1_R2.fastq.gz
+=============================================
+10000 sequences processed in total
+The length threshold of paired-end sequences gets evaluated later on (in the validation step)
+
+Validate paired-end files IP_input_DMSO_rep1_R1_trimmed.fq.gz and IP_input_DMSO_rep1_R2_trimmed.fq.gz
+file_1: IP_input_DMSO_rep1_R1_trimmed.fq.gz, file_2: IP_input_DMSO_rep1_R2_trimmed.fq.gz
+
+
+>>>>> Now validing the length of the 2 paired-end infiles: IP_input_DMSO_rep1_R1_trimmed.fq.gz and IP_input_DMSO_rep1_R2_trimmed.fq.gz <<<<<
+Writing validated paired-end Read 1 reads to IP_input_DMSO_rep1_R1_val_1.fq.gz
+Writing validated paired-end Read 2 reads to IP_input_DMSO_rep1_R2_val_2.fq.gz
+
+Total number of sequences analysed: 10000
+
+Number of sequence pairs removed because at least one read was shorter than the length cutoff (36 bp): 211 (2.11%)
+
+Deleting both intermediate output files IP_input_DMSO_rep1_R1_trimmed.fq.gz and IP_input_DMSO_rep1_R2_trimmed.fq.gz
+
+====================================================================================================
+

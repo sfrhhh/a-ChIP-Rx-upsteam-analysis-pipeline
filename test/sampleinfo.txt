@@ -1,0 +1,4 @@
+IP_H3K27ac_DMSO_rep1	IP_H3K27ac_DMSO_rep1	IP_H3K27ac_DMSO
+IP_H3K27ac_DMSO_rep2	IP_H3K27ac_DMSO_rep2	IP_H3K27ac_DMSO
+IP_input_DMSO_rep1	IP_input_DMSO_rep1	IP_input_DMSO
+IP_input_DMSO_rep2	IP_input_DMSO_rep2	IP_input_DMSO

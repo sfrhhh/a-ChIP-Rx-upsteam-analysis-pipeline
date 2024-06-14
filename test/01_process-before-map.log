@@ -1,0 +1,27 @@
+Usage:
+   01_process-before-map.sh file_path
+
+Generating file: /00-1_rawFastqc/IP_H3K27ac_DMSO_rep1_R1.fastq.gz_R1_fastqc.zip...
+Generating file: /00-1_rawFastqc/IP_H3K27ac_DMSO_rep2_R1.fastq.gz_R1_fastqc.zip...
+Generating file: /00-1_rawFastqc/IP_input_DMSO_rep1_R1.fastq.gz_R1_fastqc.zip...
+Generating file: /00-1_rawFastqc/IP_input_DMSO_rep2_R1.fastq.gz_R1_fastqc.zip...
+Analysis complete for IP_H3K27ac_DMSO_rep1_R2.fastq.gz
+Analysis complete for IP_H3K27ac_DMSO_rep2_R2.fastq.gz
+Analysis complete for IP_H3K27ac_DMSO_rep1_R1.fastq.gz
+Analysis complete for IP_input_DMSO_rep2_R1.fastq.gz
+Analysis complete for IP_input_DMSO_rep1_R2.fastq.gz
+Analysis complete for IP_input_DMSO_rep1_R1.fastq.gz
+Analysis complete for IP_input_DMSO_rep2_R2.fastq.gz
+Analysis complete for IP_H3K27ac_DMSO_rep2_R1.fastq.gz
+Generating file: /work/xulab/xulab-seq/sfr/scripts/ChIP-Rx-pipeline/test/02_trimmeddata_fastqc/IP_H3K27ac_DMSO_rep1_trimmed_R1_fastqc.html...
+Generating file: /work/xulab/xulab-seq/sfr/scripts/ChIP-Rx-pipeline/test/02_trimmeddata_fastqc/IP_H3K27ac_DMSO_rep2_trimmed_R1_fastqc.html...
+Generating file: /work/xulab/xulab-seq/sfr/scripts/ChIP-Rx-pipeline/test/02_trimmeddata_fastqc/IP_input_DMSO_rep1_trimmed_R1_fastqc.html...
+Generating file: /work/xulab/xulab-seq/sfr/scripts/ChIP-Rx-pipeline/test/02_trimmeddata_fastqc/IP_input_DMSO_rep2_trimmed_R1_fastqc.html...
+Analysis complete for IP_input_DMSO_rep2_trimmed_R1.fq.gz
+Analysis complete for IP_input_DMSO_rep1_trimmed_R1.fq.gz
+Analysis complete for IP_H3K27ac_DMSO_rep2_trimmed_R1.fq.gz
+Analysis complete for IP_H3K27ac_DMSO_rep1_trimmed_R1.fq.gz
+Analysis complete for IP_H3K27ac_DMSO_rep2_trimmed_R2.fq.gz
+Analysis complete for IP_H3K27ac_DMSO_rep1_trimmed_R2.fq.gz
+Analysis complete for IP_input_DMSO_rep2_trimmed_R2.fq.gz
+Analysis complete for IP_input_DMSO_rep1_trimmed_R2.fq.gz

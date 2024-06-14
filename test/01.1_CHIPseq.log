@@ -1,0 +1,234 @@
+Usage:
+   01.1_CHIPseq.sh file_path
+
+
+***************************
+align of experimental genome begins at 2024-06-15 00:21:15
+***************************
+[bam_sort_core] merging from 0 files and 25 in-memory blocks...
+00:21:24.089 INFO  NativeLibraryLoader - Loading libgkl_compression.so from jar:file:/share/home/suifengrui/miniconda3/envs/chip-seq_env/share/picard-2.27.5-0/picard.jar!/com/intel/gkl/native/libgkl_compression.so
+[Sat Jun 15 00:21:24 CST 2024] MarkDuplicates --INPUT /work/xulab/xulab-seq/sfr/scripts/ChIP-Rx-pipeline/test/03_bam_hg19/IP_H3K27ac_DMSO_rep1_hg19.bam --OUTPUT /work/xulab/xulab-seq/sfr/scripts/ChIP-Rx-pipeline/test/03_bam_hg19_rmdup/IP_H3K27ac_DMSO_rep1_hg19.rmdup.bam --METRICS_FILE /work/xulab/xulab-seq/sfr/scripts/ChIP-Rx-pipeline/test/03_bam_hg19_rmdup/IP_H3K27ac_DMSO_rep1_hg19.rmdup.metrics --REMOVE_DUPLICATES true --MAX_SEQUENCES_FOR_DISK_READ_ENDS_MAP 50000 --MAX_FILE_HANDLES_FOR_READ_ENDS_MAP 8000 --SORTING_COLLECTION_SIZE_RATIO 0.25 --TAG_DUPLICATE_SET_MEMBERS false --REMOVE_SEQUENCING_DUPLICATES false --TAGGING_POLICY DontTag --CLEAR_DT true --DUPLEX_UMI false --FLOW_MODE false --FLOW_QUALITY_SUM_STRATEGY false --USE_END_IN_UNPAIRED_READS false --USE_UNPAIRED_CLIPPED_END false --UNPAIRED_END_UNCERTAINTY 0 --FLOW_SKIP_FIRST_N_FLOWS 0 --FLOW_Q_IS_KNOWN_END false --FLOW_EFFECTIVE_QUALITY_THRESHOLD 15 --ADD_PG_TAG_TO_READS true --ASSUME_SORTED false --DUPLICATE_SCORING_STRATEGY SUM_OF_BASE_QUALITIES --PROGRAM_RECORD_ID MarkDuplicates --PROGRAM_GROUP_NAME MarkDuplicates --READ_NAME_REGEX <optimized capture of last three ':' separated fields as numeric values> --OPTICAL_DUPLICATE_PIXEL_DISTANCE 100 --MAX_OPTICAL_DUPLICATE_SET_SIZE 300000 --VERBOSITY INFO --QUIET false --VALIDATION_STRINGENCY STRICT --COMPRESSION_LEVEL 5 --MAX_RECORDS_IN_RAM 500000 --CREATE_INDEX false --CREATE_MD5_FILE false --GA4GH_CLIENT_SECRETS client_secrets.json --help false --version false --showHidden false --USE_JDK_DEFLATER false --USE_JDK_INFLATER false
+[Sat Jun 15 00:21:24 CST 2024] Executing as suifengrui@cpu010 on Linux 3.10.0-957.el7.x86_64 amd64; OpenJDK 64-Bit Server VM 17.0.3-internal+0-adhoc..src; Deflater: Intel; Inflater: Intel; Provider GCS is not available; Picard version: Version:2.27.5
+INFO	2024-06-15 00:21:24	MarkDuplicates	Start of doWork freeMemory: 529921160; totalMemory: 536870912; maxMemory: 2147483648
+INFO	2024-06-15 00:21:24	MarkDuplicates	Reading input file and constructing read end information.
+INFO	2024-06-15 00:21:24	MarkDuplicates	Will retain up to 7780737 data points before spilling to disk.
+WARNING	2024-06-15 00:21:24	AbstractOpticalDuplicateFinderCommandLineProgram	A field field parsed out of a read name was expected to contain an integer and did not. Read name: SRR15249874.20948283. Cause: String 'SRR15249874.20948283' did not start with a parsable number.
+INFO	2024-06-15 00:21:24	MarkDuplicates	Read 9138 records. 0 pairs never matched.
+INFO	2024-06-15 00:21:24	MarkDuplicates	After buildSortedReadEndLists freeMemory: 465776680; totalMemory: 536870912; maxMemory: 2147483648
+INFO	2024-06-15 00:21:24	MarkDuplicates	Will retain up to 67108864 duplicate indices before spilling to disk.
+INFO	2024-06-15 00:21:24	MarkDuplicates	Traversing read pair information and detecting duplicates.
+INFO	2024-06-15 00:21:24	MarkDuplicates	Traversing fragment information and detecting duplicates.
+INFO	2024-06-15 00:21:24	MarkDuplicates	Sorting list of duplicate records.
+INFO	2024-06-15 00:21:24	MarkDuplicates	After generateDuplicateIndexes freeMemory: 528609584; totalMemory: 1073741824; maxMemory: 2147483648
+INFO	2024-06-15 00:21:24	MarkDuplicates	Marking 0 records as duplicates.
+INFO	2024-06-15 00:21:24	MarkDuplicates	Found 0 optical duplicate clusters.
+INFO	2024-06-15 00:21:24	MarkDuplicates	Reads are assumed to be ordered by: coordinate
+INFO	2024-06-15 00:21:24	MarkDuplicates	Writing complete. Closing input iterator.
+INFO	2024-06-15 00:21:24	MarkDuplicates	Duplicate Index cleanup.
+INFO	2024-06-15 00:21:24	MarkDuplicates	Getting Memory Stats.
+INFO	2024-06-15 00:21:24	MarkDuplicates	Before output close freeMemory: 529272768; totalMemory: 536870912; maxMemory: 2147483648
+INFO	2024-06-15 00:21:24	MarkDuplicates	Closed outputs. Getting more Memory Stats.
+INFO	2024-06-15 00:21:24	MarkDuplicates	After output close freeMemory: 529272920; totalMemory: 536870912; maxMemory: 2147483648
+[Sat Jun 15 00:21:24 CST 2024] picard.sam.markduplicates.MarkDuplicates done. Elapsed time: 0.01 minutes.
+Runtime.totalMemory()=536870912
+[bam_sort_core] merging from 0 files and 25 in-memory blocks...
+00:21:30.141 INFO  NativeLibraryLoader - Loading libgkl_compression.so from jar:file:/share/home/suifengrui/miniconda3/envs/chip-seq_env/share/picard-2.27.5-0/picard.jar!/com/intel/gkl/native/libgkl_compression.so
+[Sat Jun 15 00:21:30 CST 2024] MarkDuplicates --INPUT /work/xulab/xulab-seq/sfr/scripts/ChIP-Rx-pipeline/test/03_bam_hg19/IP_H3K27ac_DMSO_rep2_hg19.bam --OUTPUT /work/xulab/xulab-seq/sfr/scripts/ChIP-Rx-pipeline/test/03_bam_hg19_rmdup/IP_H3K27ac_DMSO_rep2_hg19.rmdup.bam --METRICS_FILE /work/xulab/xulab-seq/sfr/scripts/ChIP-Rx-pipeline/test/03_bam_hg19_rmdup/IP_H3K27ac_DMSO_rep2_hg19.rmdup.metrics --REMOVE_DUPLICATES true --MAX_SEQUENCES_FOR_DISK_READ_ENDS_MAP 50000 --MAX_FILE_HANDLES_FOR_READ_ENDS_MAP 8000 --SORTING_COLLECTION_SIZE_RATIO 0.25 --TAG_DUPLICATE_SET_MEMBERS false --REMOVE_SEQUENCING_DUPLICATES false --TAGGING_POLICY DontTag --CLEAR_DT true --DUPLEX_UMI false --FLOW_MODE false --FLOW_QUALITY_SUM_STRATEGY false --USE_END_IN_UNPAIRED_READS false --USE_UNPAIRED_CLIPPED_END false --UNPAIRED_END_UNCERTAINTY 0 --FLOW_SKIP_FIRST_N_FLOWS 0 --FLOW_Q_IS_KNOWN_END false --FLOW_EFFECTIVE_QUALITY_THRESHOLD 15 --ADD_PG_TAG_TO_READS true --ASSUME_SORTED false --DUPLICATE_SCORING_STRATEGY SUM_OF_BASE_QUALITIES --PROGRAM_RECORD_ID MarkDuplicates --PROGRAM_GROUP_NAME MarkDuplicates --READ_NAME_REGEX <optimized capture of last three ':' separated fields as numeric values> --OPTICAL_DUPLICATE_PIXEL_DISTANCE 100 --MAX_OPTICAL_DUPLICATE_SET_SIZE 300000 --VERBOSITY INFO --QUIET false --VALIDATION_STRINGENCY STRICT --COMPRESSION_LEVEL 5 --MAX_RECORDS_IN_RAM 500000 --CREATE_INDEX false --CREATE_MD5_FILE false --GA4GH_CLIENT_SECRETS client_secrets.json --help false --version false --showHidden false --USE_JDK_DEFLATER false --USE_JDK_INFLATER false
+[Sat Jun 15 00:21:30 CST 2024] Executing as suifengrui@cpu010 on Linux 3.10.0-957.el7.x86_64 amd64; OpenJDK 64-Bit Server VM 17.0.3-internal+0-adhoc..src; Deflater: Intel; Inflater: Intel; Provider GCS is not available; Picard version: Version:2.27.5
+INFO	2024-06-15 00:21:30	MarkDuplicates	Start of doWork freeMemory: 529921144; totalMemory: 536870912; maxMemory: 2147483648
+INFO	2024-06-15 00:21:30	MarkDuplicates	Reading input file and constructing read end information.
+INFO	2024-06-15 00:21:30	MarkDuplicates	Will retain up to 7780737 data points before spilling to disk.
+WARNING	2024-06-15 00:21:30	AbstractOpticalDuplicateFinderCommandLineProgram	A field field parsed out of a read name was expected to contain an integer and did not. Read name: SRR15249875.30196476. Cause: String 'SRR15249875.30196476' did not start with a parsable number.
+INFO	2024-06-15 00:21:30	MarkDuplicates	Read 8772 records. 0 pairs never matched.
+INFO	2024-06-15 00:21:30	MarkDuplicates	After buildSortedReadEndLists freeMemory: 465816344; totalMemory: 536870912; maxMemory: 2147483648
+INFO	2024-06-15 00:21:30	MarkDuplicates	Will retain up to 67108864 duplicate indices before spilling to disk.
+INFO	2024-06-15 00:21:30	MarkDuplicates	Traversing read pair information and detecting duplicates.
+INFO	2024-06-15 00:21:30	MarkDuplicates	Traversing fragment information and detecting duplicates.
+INFO	2024-06-15 00:21:30	MarkDuplicates	Sorting list of duplicate records.
+INFO	2024-06-15 00:21:30	MarkDuplicates	After generateDuplicateIndexes freeMemory: 528609720; totalMemory: 1073741824; maxMemory: 2147483648
+INFO	2024-06-15 00:21:30	MarkDuplicates	Marking 0 records as duplicates.
+INFO	2024-06-15 00:21:30	MarkDuplicates	Found 0 optical duplicate clusters.
+INFO	2024-06-15 00:21:30	MarkDuplicates	Reads are assumed to be ordered by: coordinate
+INFO	2024-06-15 00:21:30	MarkDuplicates	Writing complete. Closing input iterator.
+INFO	2024-06-15 00:21:30	MarkDuplicates	Duplicate Index cleanup.
+INFO	2024-06-15 00:21:30	MarkDuplicates	Getting Memory Stats.
+INFO	2024-06-15 00:21:30	MarkDuplicates	Before output close freeMemory: 529272320; totalMemory: 536870912; maxMemory: 2147483648
+INFO	2024-06-15 00:21:30	MarkDuplicates	Closed outputs. Getting more Memory Stats.
+INFO	2024-06-15 00:21:30	MarkDuplicates	After output close freeMemory: 529272472; totalMemory: 536870912; maxMemory: 2147483648
+[Sat Jun 15 00:21:30 CST 2024] picard.sam.markduplicates.MarkDuplicates done. Elapsed time: 0.01 minutes.
+Runtime.totalMemory()=536870912
+[bam_sort_core] merging from 0 files and 25 in-memory blocks...
+00:21:36.335 INFO  NativeLibraryLoader - Loading libgkl_compression.so from jar:file:/share/home/suifengrui/miniconda3/envs/chip-seq_env/share/picard-2.27.5-0/picard.jar!/com/intel/gkl/native/libgkl_compression.so
+[Sat Jun 15 00:21:36 CST 2024] MarkDuplicates --INPUT /work/xulab/xulab-seq/sfr/scripts/ChIP-Rx-pipeline/test/03_bam_hg19/IP_input_DMSO_rep1_hg19.bam --OUTPUT /work/xulab/xulab-seq/sfr/scripts/ChIP-Rx-pipeline/test/03_bam_hg19_rmdup/IP_input_DMSO_rep1_hg19.rmdup.bam --METRICS_FILE /work/xulab/xulab-seq/sfr/scripts/ChIP-Rx-pipeline/test/03_bam_hg19_rmdup/IP_input_DMSO_rep1_hg19.rmdup.metrics --REMOVE_DUPLICATES true --MAX_SEQUENCES_FOR_DISK_READ_ENDS_MAP 50000 --MAX_FILE_HANDLES_FOR_READ_ENDS_MAP 8000 --SORTING_COLLECTION_SIZE_RATIO 0.25 --TAG_DUPLICATE_SET_MEMBERS false --REMOVE_SEQUENCING_DUPLICATES false --TAGGING_POLICY DontTag --CLEAR_DT true --DUPLEX_UMI false --FLOW_MODE false --FLOW_QUALITY_SUM_STRATEGY false --USE_END_IN_UNPAIRED_READS false --USE_UNPAIRED_CLIPPED_END false --UNPAIRED_END_UNCERTAINTY 0 --FLOW_SKIP_FIRST_N_FLOWS 0 --FLOW_Q_IS_KNOWN_END false --FLOW_EFFECTIVE_QUALITY_THRESHOLD 15 --ADD_PG_TAG_TO_READS true --ASSUME_SORTED false --DUPLICATE_SCORING_STRATEGY SUM_OF_BASE_QUALITIES --PROGRAM_RECORD_ID MarkDuplicates --PROGRAM_GROUP_NAME MarkDuplicates --READ_NAME_REGEX <optimized capture of last three ':' separated fields as numeric values> --OPTICAL_DUPLICATE_PIXEL_DISTANCE 100 --MAX_OPTICAL_DUPLICATE_SET_SIZE 300000 --VERBOSITY INFO --QUIET false --VALIDATION_STRINGENCY STRICT --COMPRESSION_LEVEL 5 --MAX_RECORDS_IN_RAM 500000 --CREATE_INDEX false --CREATE_MD5_FILE false --GA4GH_CLIENT_SECRETS client_secrets.json --help false --version false --showHidden false --USE_JDK_DEFLATER false --USE_JDK_INFLATER false
+[Sat Jun 15 00:21:36 CST 2024] Executing as suifengrui@cpu010 on Linux 3.10.0-957.el7.x86_64 amd64; OpenJDK 64-Bit Server VM 17.0.3-internal+0-adhoc..src; Deflater: Intel; Inflater: Intel; Provider GCS is not available; Picard version: Version:2.27.5
+INFO	2024-06-15 00:21:36	MarkDuplicates	Start of doWork freeMemory: 529920856; totalMemory: 536870912; maxMemory: 2147483648
+INFO	2024-06-15 00:21:36	MarkDuplicates	Reading input file and constructing read end information.
+INFO	2024-06-15 00:21:36	MarkDuplicates	Will retain up to 7780737 data points before spilling to disk.
+WARNING	2024-06-15 00:21:36	AbstractOpticalDuplicateFinderCommandLineProgram	A field field parsed out of a read name was expected to contain an integer and did not. Read name: SRR15249878.17453616. Cause: String 'SRR15249878.17453616' did not start with a parsable number.
+INFO	2024-06-15 00:21:36	MarkDuplicates	Read 7986 records. 0 pairs never matched.
+INFO	2024-06-15 00:21:36	MarkDuplicates	After buildSortedReadEndLists freeMemory: 465901128; totalMemory: 536870912; maxMemory: 2147483648
+INFO	2024-06-15 00:21:36	MarkDuplicates	Will retain up to 67108864 duplicate indices before spilling to disk.
+INFO	2024-06-15 00:21:36	MarkDuplicates	Traversing read pair information and detecting duplicates.
+INFO	2024-06-15 00:21:36	MarkDuplicates	Traversing fragment information and detecting duplicates.
+INFO	2024-06-15 00:21:36	MarkDuplicates	Sorting list of duplicate records.
+INFO	2024-06-15 00:21:36	MarkDuplicates	After generateDuplicateIndexes freeMemory: 528627824; totalMemory: 1073741824; maxMemory: 2147483648
+INFO	2024-06-15 00:21:36	MarkDuplicates	Marking 0 records as duplicates.
+INFO	2024-06-15 00:21:36	MarkDuplicates	Found 0 optical duplicate clusters.
+INFO	2024-06-15 00:21:36	MarkDuplicates	Reads are assumed to be ordered by: coordinate
+INFO	2024-06-15 00:21:36	MarkDuplicates	Writing complete. Closing input iterator.
+INFO	2024-06-15 00:21:36	MarkDuplicates	Duplicate Index cleanup.
+INFO	2024-06-15 00:21:36	MarkDuplicates	Getting Memory Stats.
+INFO	2024-06-15 00:21:36	MarkDuplicates	Before output close freeMemory: 529290048; totalMemory: 536870912; maxMemory: 2147483648
+INFO	2024-06-15 00:21:36	MarkDuplicates	Closed outputs. Getting more Memory Stats.
+INFO	2024-06-15 00:21:37	MarkDuplicates	After output close freeMemory: 529290200; totalMemory: 536870912; maxMemory: 2147483648
+[Sat Jun 15 00:21:37 CST 2024] picard.sam.markduplicates.MarkDuplicates done. Elapsed time: 0.01 minutes.
+Runtime.totalMemory()=536870912
+[bam_sort_core] merging from 0 files and 25 in-memory blocks...
+00:21:43.474 INFO  NativeLibraryLoader - Loading libgkl_compression.so from jar:file:/share/home/suifengrui/miniconda3/envs/chip-seq_env/share/picard-2.27.5-0/picard.jar!/com/intel/gkl/native/libgkl_compression.so
+[Sat Jun 15 00:21:43 CST 2024] MarkDuplicates --INPUT /work/xulab/xulab-seq/sfr/scripts/ChIP-Rx-pipeline/test/03_bam_hg19/IP_input_DMSO_rep2_hg19.bam --OUTPUT /work/xulab/xulab-seq/sfr/scripts/ChIP-Rx-pipeline/test/03_bam_hg19_rmdup/IP_input_DMSO_rep2_hg19.rmdup.bam --METRICS_FILE /work/xulab/xulab-seq/sfr/scripts/ChIP-Rx-pipeline/test/03_bam_hg19_rmdup/IP_input_DMSO_rep2_hg19.rmdup.metrics --REMOVE_DUPLICATES true --MAX_SEQUENCES_FOR_DISK_READ_ENDS_MAP 50000 --MAX_FILE_HANDLES_FOR_READ_ENDS_MAP 8000 --SORTING_COLLECTION_SIZE_RATIO 0.25 --TAG_DUPLICATE_SET_MEMBERS false --REMOVE_SEQUENCING_DUPLICATES false --TAGGING_POLICY DontTag --CLEAR_DT true --DUPLEX_UMI false --FLOW_MODE false --FLOW_QUALITY_SUM_STRATEGY false --USE_END_IN_UNPAIRED_READS false --USE_UNPAIRED_CLIPPED_END false --UNPAIRED_END_UNCERTAINTY 0 --FLOW_SKIP_FIRST_N_FLOWS 0 --FLOW_Q_IS_KNOWN_END false --FLOW_EFFECTIVE_QUALITY_THRESHOLD 15 --ADD_PG_TAG_TO_READS true --ASSUME_SORTED false --DUPLICATE_SCORING_STRATEGY SUM_OF_BASE_QUALITIES --PROGRAM_RECORD_ID MarkDuplicates --PROGRAM_GROUP_NAME MarkDuplicates --READ_NAME_REGEX <optimized capture of last three ':' separated fields as numeric values> --OPTICAL_DUPLICATE_PIXEL_DISTANCE 100 --MAX_OPTICAL_DUPLICATE_SET_SIZE 300000 --VERBOSITY INFO --QUIET false --VALIDATION_STRINGENCY STRICT --COMPRESSION_LEVEL 5 --MAX_RECORDS_IN_RAM 500000 --CREATE_INDEX false --CREATE_MD5_FILE false --GA4GH_CLIENT_SECRETS client_secrets.json --help false --version false --showHidden false --USE_JDK_DEFLATER false --USE_JDK_INFLATER false
+[Sat Jun 15 00:21:43 CST 2024] Executing as suifengrui@cpu010 on Linux 3.10.0-957.el7.x86_64 amd64; OpenJDK 64-Bit Server VM 17.0.3-internal+0-adhoc..src; Deflater: Intel; Inflater: Intel; Provider GCS is not available; Picard version: Version:2.27.5
+INFO	2024-06-15 00:21:43	MarkDuplicates	Start of doWork freeMemory: 529920856; totalMemory: 536870912; maxMemory: 2147483648
+INFO	2024-06-15 00:21:43	MarkDuplicates	Reading input file and constructing read end information.
+INFO	2024-06-15 00:21:43	MarkDuplicates	Will retain up to 7780737 data points before spilling to disk.
+WARNING	2024-06-15 00:21:43	AbstractOpticalDuplicateFinderCommandLineProgram	A field field parsed out of a read name was expected to contain an integer and did not. Read name: SRR15249879.38609912. Cause: String 'SRR15249879.38609912' did not start with a parsable number.
+INFO	2024-06-15 00:21:43	MarkDuplicates	Read 8580 records. 0 pairs never matched.
+INFO	2024-06-15 00:21:43	MarkDuplicates	After buildSortedReadEndLists freeMemory: 465838008; totalMemory: 536870912; maxMemory: 2147483648
+INFO	2024-06-15 00:21:43	MarkDuplicates	Will retain up to 67108864 duplicate indices before spilling to disk.
+INFO	2024-06-15 00:21:43	MarkDuplicates	Traversing read pair information and detecting duplicates.
+INFO	2024-06-15 00:21:43	MarkDuplicates	Traversing fragment information and detecting duplicates.
+INFO	2024-06-15 00:21:43	MarkDuplicates	Sorting list of duplicate records.
+INFO	2024-06-15 00:21:43	MarkDuplicates	After generateDuplicateIndexes freeMemory: 528608616; totalMemory: 1073741824; maxMemory: 2147483648
+INFO	2024-06-15 00:21:43	MarkDuplicates	Marking 0 records as duplicates.
+INFO	2024-06-15 00:21:43	MarkDuplicates	Found 0 optical duplicate clusters.
+INFO	2024-06-15 00:21:43	MarkDuplicates	Reads are assumed to be ordered by: coordinate
+INFO	2024-06-15 00:21:44	MarkDuplicates	Writing complete. Closing input iterator.
+INFO	2024-06-15 00:21:44	MarkDuplicates	Duplicate Index cleanup.
+INFO	2024-06-15 00:21:44	MarkDuplicates	Getting Memory Stats.
+INFO	2024-06-15 00:21:44	MarkDuplicates	Before output close freeMemory: 529271808; totalMemory: 536870912; maxMemory: 2147483648
+INFO	2024-06-15 00:21:44	MarkDuplicates	Closed outputs. Getting more Memory Stats.
+INFO	2024-06-15 00:21:44	MarkDuplicates	After output close freeMemory: 529271960; totalMemory: 536870912; maxMemory: 2147483648
+[Sat Jun 15 00:21:44 CST 2024] picard.sam.markduplicates.MarkDuplicates done. Elapsed time: 0.01 minutes.
+Runtime.totalMemory()=536870912
+
+***************************
+align of spike-in genome begins at 2024-06-15 00:21:44
+***************************
+[bam_sort_core] merging from 0 files and 25 in-memory blocks...
+00:21:51.966 INFO  NativeLibraryLoader - Loading libgkl_compression.so from jar:file:/share/home/suifengrui/miniconda3/envs/chip-seq_env/share/picard-2.27.5-0/picard.jar!/com/intel/gkl/native/libgkl_compression.so
+[Sat Jun 15 00:21:51 CST 2024] MarkDuplicates --INPUT /work/xulab/xulab-seq/sfr/scripts/ChIP-Rx-pipeline/test/03_spikebam_mm10/IP_H3K27ac_DMSO_rep1_onlymm10.bam --OUTPUT /work/xulab/xulab-seq/sfr/scripts/ChIP-Rx-pipeline/test/03_spikebam_mm10_rmdup/IP_H3K27ac_DMSO_rep1_onlymm10.rmdup.bam --METRICS_FILE /work/xulab/xulab-seq/sfr/scripts/ChIP-Rx-pipeline/test/03_spikebam_mm10_rmdup/IP_H3K27ac_DMSO_rep1_onlymm10.rmdup.metrics --REMOVE_DUPLICATES true --MAX_SEQUENCES_FOR_DISK_READ_ENDS_MAP 50000 --MAX_FILE_HANDLES_FOR_READ_ENDS_MAP 8000 --SORTING_COLLECTION_SIZE_RATIO 0.25 --TAG_DUPLICATE_SET_MEMBERS false --REMOVE_SEQUENCING_DUPLICATES false --TAGGING_POLICY DontTag --CLEAR_DT true --DUPLEX_UMI false --FLOW_MODE false --FLOW_QUALITY_SUM_STRATEGY false --USE_END_IN_UNPAIRED_READS false --USE_UNPAIRED_CLIPPED_END false --UNPAIRED_END_UNCERTAINTY 0 --FLOW_SKIP_FIRST_N_FLOWS 0 --FLOW_Q_IS_KNOWN_END false --FLOW_EFFECTIVE_QUALITY_THRESHOLD 15 --ADD_PG_TAG_TO_READS true --ASSUME_SORTED false --DUPLICATE_SCORING_STRATEGY SUM_OF_BASE_QUALITIES --PROGRAM_RECORD_ID MarkDuplicates --PROGRAM_GROUP_NAME MarkDuplicates --READ_NAME_REGEX <optimized capture of last three ':' separated fields as numeric values> --OPTICAL_DUPLICATE_PIXEL_DISTANCE 100 --MAX_OPTICAL_DUPLICATE_SET_SIZE 300000 --VERBOSITY INFO --QUIET false --VALIDATION_STRINGENCY STRICT --COMPRESSION_LEVEL 5 --MAX_RECORDS_IN_RAM 500000 --CREATE_INDEX false --CREATE_MD5_FILE false --GA4GH_CLIENT_SECRETS client_secrets.json --help false --version false --showHidden false --USE_JDK_DEFLATER false --USE_JDK_INFLATER false
+[Sat Jun 15 00:21:51 CST 2024] Executing as suifengrui@cpu010 on Linux 3.10.0-957.el7.x86_64 amd64; OpenJDK 64-Bit Server VM 17.0.3-internal+0-adhoc..src; Deflater: Intel; Inflater: Intel; Provider GCS is not available; Picard version: Version:2.27.5
+INFO	2024-06-15 00:21:52	MarkDuplicates	Start of doWork freeMemory: 529921080; totalMemory: 536870912; maxMemory: 2147483648
+INFO	2024-06-15 00:21:52	MarkDuplicates	Reading input file and constructing read end information.
+INFO	2024-06-15 00:21:52	MarkDuplicates	Will retain up to 7780737 data points before spilling to disk.
+WARNING	2024-06-15 00:21:52	AbstractOpticalDuplicateFinderCommandLineProgram	A field field parsed out of a read name was expected to contain an integer and did not. Read name: SRR15249874.24592218. Cause: String 'SRR15249874.24592218' did not start with a parsable number.
+INFO	2024-06-15 00:21:52	MarkDuplicates	Read 2438 records. 0 pairs never matched.
+INFO	2024-06-15 00:21:52	MarkDuplicates	After buildSortedReadEndLists freeMemory: 466509424; totalMemory: 536870912; maxMemory: 2147483648
+INFO	2024-06-15 00:21:52	MarkDuplicates	Will retain up to 67108864 duplicate indices before spilling to disk.
+INFO	2024-06-15 00:21:52	MarkDuplicates	Traversing read pair information and detecting duplicates.
+INFO	2024-06-15 00:21:52	MarkDuplicates	Traversing fragment information and detecting duplicates.
+INFO	2024-06-15 00:21:52	MarkDuplicates	Sorting list of duplicate records.
+INFO	2024-06-15 00:21:52	MarkDuplicates	After generateDuplicateIndexes freeMemory: 528637032; totalMemory: 1073741824; maxMemory: 2147483648
+INFO	2024-06-15 00:21:52	MarkDuplicates	Marking 0 records as duplicates.
+INFO	2024-06-15 00:21:52	MarkDuplicates	Found 0 optical duplicate clusters.
+INFO	2024-06-15 00:21:52	MarkDuplicates	Reads are assumed to be ordered by: coordinate
+INFO	2024-06-15 00:21:52	MarkDuplicates	Writing complete. Closing input iterator.
+INFO	2024-06-15 00:21:52	MarkDuplicates	Duplicate Index cleanup.
+INFO	2024-06-15 00:21:52	MarkDuplicates	Getting Memory Stats.
+INFO	2024-06-15 00:21:52	MarkDuplicates	Before output close freeMemory: 529306664; totalMemory: 536870912; maxMemory: 2147483648
+INFO	2024-06-15 00:21:52	MarkDuplicates	Closed outputs. Getting more Memory Stats.
+INFO	2024-06-15 00:21:52	MarkDuplicates	After output close freeMemory: 529306664; totalMemory: 536870912; maxMemory: 2147483648
+[Sat Jun 15 00:21:52 CST 2024] picard.sam.markduplicates.MarkDuplicates done. Elapsed time: 0.01 minutes.
+Runtime.totalMemory()=536870912
+[bam_sort_core] merging from 0 files and 25 in-memory blocks...
+00:21:57.958 INFO  NativeLibraryLoader - Loading libgkl_compression.so from jar:file:/share/home/suifengrui/miniconda3/envs/chip-seq_env/share/picard-2.27.5-0/picard.jar!/com/intel/gkl/native/libgkl_compression.so
+[Sat Jun 15 00:21:57 CST 2024] MarkDuplicates --INPUT /work/xulab/xulab-seq/sfr/scripts/ChIP-Rx-pipeline/test/03_spikebam_mm10/IP_H3K27ac_DMSO_rep2_onlymm10.bam --OUTPUT /work/xulab/xulab-seq/sfr/scripts/ChIP-Rx-pipeline/test/03_spikebam_mm10_rmdup/IP_H3K27ac_DMSO_rep2_onlymm10.rmdup.bam --METRICS_FILE /work/xulab/xulab-seq/sfr/scripts/ChIP-Rx-pipeline/test/03_spikebam_mm10_rmdup/IP_H3K27ac_DMSO_rep2_onlymm10.rmdup.metrics --REMOVE_DUPLICATES true --MAX_SEQUENCES_FOR_DISK_READ_ENDS_MAP 50000 --MAX_FILE_HANDLES_FOR_READ_ENDS_MAP 8000 --SORTING_COLLECTION_SIZE_RATIO 0.25 --TAG_DUPLICATE_SET_MEMBERS false --REMOVE_SEQUENCING_DUPLICATES false --TAGGING_POLICY DontTag --CLEAR_DT true --DUPLEX_UMI false --FLOW_MODE false --FLOW_QUALITY_SUM_STRATEGY false --USE_END_IN_UNPAIRED_READS false --USE_UNPAIRED_CLIPPED_END false --UNPAIRED_END_UNCERTAINTY 0 --FLOW_SKIP_FIRST_N_FLOWS 0 --FLOW_Q_IS_KNOWN_END false --FLOW_EFFECTIVE_QUALITY_THRESHOLD 15 --ADD_PG_TAG_TO_READS true --ASSUME_SORTED false --DUPLICATE_SCORING_STRATEGY SUM_OF_BASE_QUALITIES --PROGRAM_RECORD_ID MarkDuplicates --PROGRAM_GROUP_NAME MarkDuplicates --READ_NAME_REGEX <optimized capture of last three ':' separated fields as numeric values> --OPTICAL_DUPLICATE_PIXEL_DISTANCE 100 --MAX_OPTICAL_DUPLICATE_SET_SIZE 300000 --VERBOSITY INFO --QUIET false --VALIDATION_STRINGENCY STRICT --COMPRESSION_LEVEL 5 --MAX_RECORDS_IN_RAM 500000 --CREATE_INDEX false --CREATE_MD5_FILE false --GA4GH_CLIENT_SECRETS client_secrets.json --help false --version false --showHidden false --USE_JDK_DEFLATER false --USE_JDK_INFLATER false
+[Sat Jun 15 00:21:57 CST 2024] Executing as suifengrui@cpu010 on Linux 3.10.0-957.el7.x86_64 amd64; OpenJDK 64-Bit Server VM 17.0.3-internal+0-adhoc..src; Deflater: Intel; Inflater: Intel; Provider GCS is not available; Picard version: Version:2.27.5
+INFO	2024-06-15 00:21:57	MarkDuplicates	Start of doWork freeMemory: 529921080; totalMemory: 536870912; maxMemory: 2147483648
+INFO	2024-06-15 00:21:57	MarkDuplicates	Reading input file and constructing read end information.
+INFO	2024-06-15 00:21:57	MarkDuplicates	Will retain up to 7780737 data points before spilling to disk.
+WARNING	2024-06-15 00:21:58	AbstractOpticalDuplicateFinderCommandLineProgram	A field field parsed out of a read name was expected to contain an integer and did not. Read name: SRR15249875.7852812. Cause: String 'SRR15249875.7852812' did not start with a parsable number.
+INFO	2024-06-15 00:21:58	MarkDuplicates	Read 2486 records. 0 pairs never matched.
+INFO	2024-06-15 00:21:58	MarkDuplicates	After buildSortedReadEndLists freeMemory: 466504376; totalMemory: 536870912; maxMemory: 2147483648
+INFO	2024-06-15 00:21:58	MarkDuplicates	Will retain up to 67108864 duplicate indices before spilling to disk.
+INFO	2024-06-15 00:21:58	MarkDuplicates	Traversing read pair information and detecting duplicates.
+INFO	2024-06-15 00:21:58	MarkDuplicates	Traversing fragment information and detecting duplicates.
+INFO	2024-06-15 00:21:58	MarkDuplicates	Sorting list of duplicate records.
+INFO	2024-06-15 00:21:58	MarkDuplicates	After generateDuplicateIndexes freeMemory: 528636992; totalMemory: 1073741824; maxMemory: 2147483648
+INFO	2024-06-15 00:21:58	MarkDuplicates	Marking 2 records as duplicates.
+INFO	2024-06-15 00:21:58	MarkDuplicates	Found 0 optical duplicate clusters.
+INFO	2024-06-15 00:21:58	MarkDuplicates	Reads are assumed to be ordered by: coordinate
+INFO	2024-06-15 00:21:58	MarkDuplicates	Writing complete. Closing input iterator.
+INFO	2024-06-15 00:21:58	MarkDuplicates	Duplicate Index cleanup.
+INFO	2024-06-15 00:21:58	MarkDuplicates	Getting Memory Stats.
+INFO	2024-06-15 00:21:58	MarkDuplicates	Before output close freeMemory: 529306472; totalMemory: 536870912; maxMemory: 2147483648
+INFO	2024-06-15 00:21:58	MarkDuplicates	Closed outputs. Getting more Memory Stats.
+INFO	2024-06-15 00:21:58	MarkDuplicates	After output close freeMemory: 529306472; totalMemory: 536870912; maxMemory: 2147483648
+[Sat Jun 15 00:21:58 CST 2024] picard.sam.markduplicates.MarkDuplicates done. Elapsed time: 0.01 minutes.
+Runtime.totalMemory()=536870912
+00:22:04.477 INFO  NativeLibraryLoader - Loading libgkl_compression.so from jar:file:/share/home/suifengrui/miniconda3/envs/chip-seq_env/share/picard-2.27.5-0/picard.jar!/com/intel/gkl/native/libgkl_compression.so
+[Sat Jun 15 00:22:04 CST 2024] MarkDuplicates --INPUT /work/xulab/xulab-seq/sfr/scripts/ChIP-Rx-pipeline/test/03_spikebam_mm10/IP_input_DMSO_rep1_onlymm10.bam --OUTPUT /work/xulab/xulab-seq/sfr/scripts/ChIP-Rx-pipeline/test/03_spikebam_mm10_rmdup/IP_input_DMSO_rep1_onlymm10.rmdup.bam --METRICS_FILE /work/xulab/xulab-seq/sfr/scripts/ChIP-Rx-pipeline/test/03_spikebam_mm10_rmdup/IP_input_DMSO_rep1_onlymm10.rmdup.metrics --REMOVE_DUPLICATES true --MAX_SEQUENCES_FOR_DISK_READ_ENDS_MAP 50000 --MAX_FILE_HANDLES_FOR_READ_ENDS_MAP 8000 --SORTING_COLLECTION_SIZE_RATIO 0.25 --TAG_DUPLICATE_SET_MEMBERS false --REMOVE_SEQUENCING_DUPLICATES false --TAGGING_POLICY DontTag --CLEAR_DT true --DUPLEX_UMI false --FLOW_MODE false --FLOW_QUALITY_SUM_STRATEGY false --USE_END_IN_UNPAIRED_READS false --USE_UNPAIRED_CLIPPED_END false --UNPAIRED_END_UNCERTAINTY 0 --FLOW_SKIP_FIRST_N_FLOWS 0 --FLOW_Q_IS_KNOWN_END false --FLOW_EFFECTIVE_QUALITY_THRESHOLD 15 --ADD_PG_TAG_TO_READS true --ASSUME_SORTED false --DUPLICATE_SCORING_STRATEGY SUM_OF_BASE_QUALITIES --PROGRAM_RECORD_ID MarkDuplicates --PROGRAM_GROUP_NAME MarkDuplicates --READ_NAME_REGEX <optimized capture of last three ':' separated fields as numeric values> --OPTICAL_DUPLICATE_PIXEL_DISTANCE 100 --MAX_OPTICAL_DUPLICATE_SET_SIZE 300000 --VERBOSITY INFO --QUIET false --VALIDATION_STRINGENCY STRICT --COMPRESSION_LEVEL 5 --MAX_RECORDS_IN_RAM 500000 --CREATE_INDEX false --CREATE_MD5_FILE false --GA4GH_CLIENT_SECRETS client_secrets.json --help false --version false --showHidden false --USE_JDK_DEFLATER false --USE_JDK_INFLATER false
+[Sat Jun 15 00:22:04 CST 2024] Executing as suifengrui@cpu010 on Linux 3.10.0-957.el7.x86_64 amd64; OpenJDK 64-Bit Server VM 17.0.3-internal+0-adhoc..src; Deflater: Intel; Inflater: Intel; Provider GCS is not available; Picard version: Version:2.27.5
+INFO	2024-06-15 00:22:04	MarkDuplicates	Start of doWork freeMemory: 529920616; totalMemory: 536870912; maxMemory: 2147483648
+INFO	2024-06-15 00:22:04	MarkDuplicates	Reading input file and constructing read end information.
+INFO	2024-06-15 00:22:04	MarkDuplicates	Will retain up to 7780737 data points before spilling to disk.
+WARNING	2024-06-15 00:22:04	AbstractOpticalDuplicateFinderCommandLineProgram	A field field parsed out of a read name was expected to contain an integer and did not. Read name: SRR15249878.17083979. Cause: String 'SRR15249878.17083979' did not start with a parsable number.
+INFO	2024-06-15 00:22:04	MarkDuplicates	Read 1458 records. 0 pairs never matched.
+INFO	2024-06-15 00:22:04	MarkDuplicates	After buildSortedReadEndLists freeMemory: 466615288; totalMemory: 536870912; maxMemory: 2147483648
+INFO	2024-06-15 00:22:04	MarkDuplicates	Will retain up to 67108864 duplicate indices before spilling to disk.
+INFO	2024-06-15 00:22:04	MarkDuplicates	Traversing read pair information and detecting duplicates.
+INFO	2024-06-15 00:22:04	MarkDuplicates	Traversing fragment information and detecting duplicates.
+INFO	2024-06-15 00:22:04	MarkDuplicates	Sorting list of duplicate records.
+INFO	2024-06-15 00:22:04	MarkDuplicates	After generateDuplicateIndexes freeMemory: 528637160; totalMemory: 1073741824; maxMemory: 2147483648
+INFO	2024-06-15 00:22:04	MarkDuplicates	Marking 0 records as duplicates.
+INFO	2024-06-15 00:22:04	MarkDuplicates	Found 0 optical duplicate clusters.
+INFO	2024-06-15 00:22:04	MarkDuplicates	Reads are assumed to be ordered by: coordinate
+INFO	2024-06-15 00:22:04	MarkDuplicates	Writing complete. Closing input iterator.
+INFO	2024-06-15 00:22:04	MarkDuplicates	Duplicate Index cleanup.
+INFO	2024-06-15 00:22:04	MarkDuplicates	Getting Memory Stats.
+INFO	2024-06-15 00:22:04	MarkDuplicates	Before output close freeMemory: 529307968; totalMemory: 536870912; maxMemory: 2147483648
+INFO	2024-06-15 00:22:04	MarkDuplicates	Closed outputs. Getting more Memory Stats.
+INFO	2024-06-15 00:22:04	MarkDuplicates	After output close freeMemory: 529307912; totalMemory: 536870912; maxMemory: 2147483648
+[Sat Jun 15 00:22:04 CST 2024] picard.sam.markduplicates.MarkDuplicates done. Elapsed time: 0.01 minutes.
+Runtime.totalMemory()=536870912
+00:22:09.728 INFO  NativeLibraryLoader - Loading libgkl_compression.so from jar:file:/share/home/suifengrui/miniconda3/envs/chip-seq_env/share/picard-2.27.5-0/picard.jar!/com/intel/gkl/native/libgkl_compression.so
+[Sat Jun 15 00:22:09 CST 2024] MarkDuplicates --INPUT /work/xulab/xulab-seq/sfr/scripts/ChIP-Rx-pipeline/test/03_spikebam_mm10/IP_input_DMSO_rep2_onlymm10.bam --OUTPUT /work/xulab/xulab-seq/sfr/scripts/ChIP-Rx-pipeline/test/03_spikebam_mm10_rmdup/IP_input_DMSO_rep2_onlymm10.rmdup.bam --METRICS_FILE /work/xulab/xulab-seq/sfr/scripts/ChIP-Rx-pipeline/test/03_spikebam_mm10_rmdup/IP_input_DMSO_rep2_onlymm10.rmdup.metrics --REMOVE_DUPLICATES true --MAX_SEQUENCES_FOR_DISK_READ_ENDS_MAP 50000 --MAX_FILE_HANDLES_FOR_READ_ENDS_MAP 8000 --SORTING_COLLECTION_SIZE_RATIO 0.25 --TAG_DUPLICATE_SET_MEMBERS false --REMOVE_SEQUENCING_DUPLICATES false --TAGGING_POLICY DontTag --CLEAR_DT true --DUPLEX_UMI false --FLOW_MODE false --FLOW_QUALITY_SUM_STRATEGY false --USE_END_IN_UNPAIRED_READS false --USE_UNPAIRED_CLIPPED_END false --UNPAIRED_END_UNCERTAINTY 0 --FLOW_SKIP_FIRST_N_FLOWS 0 --FLOW_Q_IS_KNOWN_END false --FLOW_EFFECTIVE_QUALITY_THRESHOLD 15 --ADD_PG_TAG_TO_READS true --ASSUME_SORTED false --DUPLICATE_SCORING_STRATEGY SUM_OF_BASE_QUALITIES --PROGRAM_RECORD_ID MarkDuplicates --PROGRAM_GROUP_NAME MarkDuplicates --READ_NAME_REGEX <optimized capture of last three ':' separated fields as numeric values> --OPTICAL_DUPLICATE_PIXEL_DISTANCE 100 --MAX_OPTICAL_DUPLICATE_SET_SIZE 300000 --VERBOSITY INFO --QUIET false --VALIDATION_STRINGENCY STRICT --COMPRESSION_LEVEL 5 --MAX_RECORDS_IN_RAM 500000 --CREATE_INDEX false --CREATE_MD5_FILE false --GA4GH_CLIENT_SECRETS client_secrets.json --help false --version false --showHidden false --USE_JDK_DEFLATER false --USE_JDK_INFLATER false
+[Sat Jun 15 00:22:09 CST 2024] Executing as suifengrui@cpu010 on Linux 3.10.0-957.el7.x86_64 amd64; OpenJDK 64-Bit Server VM 17.0.3-internal+0-adhoc..src; Deflater: Intel; Inflater: Intel; Provider GCS is not available; Picard version: Version:2.27.5
+INFO	2024-06-15 00:22:09	MarkDuplicates	Start of doWork freeMemory: 529921112; totalMemory: 536870912; maxMemory: 2147483648
+INFO	2024-06-15 00:22:09	MarkDuplicates	Reading input file and constructing read end information.
+INFO	2024-06-15 00:22:09	MarkDuplicates	Will retain up to 7780737 data points before spilling to disk.
+WARNING	2024-06-15 00:22:09	AbstractOpticalDuplicateFinderCommandLineProgram	A field field parsed out of a read name was expected to contain an integer and did not. Read name: SRR15249879.45178983. Cause: String 'SRR15249879.45178983' did not start with a parsable number.
+INFO	2024-06-15 00:22:09	MarkDuplicates	Read 1150 records. 0 pairs never matched.
+INFO	2024-06-15 00:22:09	MarkDuplicates	After buildSortedReadEndLists freeMemory: 466648688; totalMemory: 536870912; maxMemory: 2147483648
+INFO	2024-06-15 00:22:09	MarkDuplicates	Will retain up to 67108864 duplicate indices before spilling to disk.
+INFO	2024-06-15 00:22:10	MarkDuplicates	Traversing read pair information and detecting duplicates.
+INFO	2024-06-15 00:22:10	MarkDuplicates	Traversing fragment information and detecting duplicates.
+INFO	2024-06-15 00:22:10	MarkDuplicates	Sorting list of duplicate records.
+INFO	2024-06-15 00:22:10	MarkDuplicates	After generateDuplicateIndexes freeMemory: 528637296; totalMemory: 1073741824; maxMemory: 2147483648
+INFO	2024-06-15 00:22:10	MarkDuplicates	Marking 0 records as duplicates.
+INFO	2024-06-15 00:22:10	MarkDuplicates	Found 0 optical duplicate clusters.
+INFO	2024-06-15 00:22:10	MarkDuplicates	Reads are assumed to be ordered by: coordinate
+INFO	2024-06-15 00:22:10	MarkDuplicates	Writing complete. Closing input iterator.
+INFO	2024-06-15 00:22:10	MarkDuplicates	Duplicate Index cleanup.
+INFO	2024-06-15 00:22:10	MarkDuplicates	Getting Memory Stats.
+INFO	2024-06-15 00:22:10	MarkDuplicates	Before output close freeMemory: 529308320; totalMemory: 536870912; maxMemory: 2147483648
+INFO	2024-06-15 00:22:10	MarkDuplicates	Closed outputs. Getting more Memory Stats.
+INFO	2024-06-15 00:22:10	MarkDuplicates	After output close freeMemory: 529308264; totalMemory: 536870912; maxMemory: 2147483648
+[Sat Jun 15 00:22:10 CST 2024] picard.sam.markduplicates.MarkDuplicates done. Elapsed time: 0.01 minutes.
+Runtime.totalMemory()=536870912
+
+***************************
+Calculating normalization factors at 2024-06-15 00:22:10
+***************************
+
+***************************
+tracks need to be done....
+***************************
+
+***************************
+call-peak begins at 2024-06-15 00:31:17; control-IP-peak need to be done....
+***************************
+waiting...
+waiting...
+Error: Unable to open file /work/xulab/xulab-seq/sfr/scripts/ChIP-Rx-pipeline/test/05_peak/05.2_peak_compare/IP_input_DMSO_rep1_compare_peaks.narrowPeak. Exiting.
+Error: Unable to open file /work/xulab/xulab-seq/sfr/scripts/ChIP-Rx-pipeline/test/05_peak/05.2_peak_compare/IP_input_DMSO_rep2_compare_peaks.narrowPeak. Exiting.
+ls: cannot access /work/xulab/xulab-seq/sfr/scripts/ChIP-Rx-pipeline/test/05_peak/05.2_peak_compare/*Input*.final.narrowPeak: No such file or directory
